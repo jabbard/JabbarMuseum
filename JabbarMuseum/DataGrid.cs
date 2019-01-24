@@ -17,9 +17,8 @@ namespace JabbarMuseum
             InitializeComponent();
         }
 
-        private void btnClearAll_Click(object sender, EventArgs e)
-        {
+        
 
-        }
+        
     }
 }

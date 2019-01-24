@@ -60,6 +60,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Visitors.cs" />
     <EmbeddedResource Include="DataGrid.resx">
       <DependentUpon>DataGrid.cs</DependentUpon>
     </EmbeddedResource>

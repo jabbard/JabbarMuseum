@@ -30,11 +30,13 @@
         {
             this.labelMuseumName = new System.Windows.Forms.Label();
             this.groupBoxData = new System.Windows.Forms.GroupBox();
+            this.labelGender = new System.Windows.Forms.Label();
+            this.grpBoxGender = new System.Windows.Forms.GroupBox();
+            this.radBtnMale = new System.Windows.Forms.RadioButton();
+            this.radBtnFemale = new System.Windows.Forms.RadioButton();
             this.btnClearAll = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radBtnMale = new System.Windows.Forms.RadioButton();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBoxOccupation = new System.Windows.Forms.ComboBox();
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
@@ -42,8 +44,6 @@
             this.labelAddress = new System.Windows.Forms.Label();
             this.labelOcupation = new System.Windows.Forms.Label();
             this.labelName = new System.Windows.Forms.Label();
-            this.grpBoxGender = new System.Windows.Forms.GroupBox();
-            this.labelGender = new System.Windows.Forms.Label();
             this.groupBoxData.SuspendLayout();
             this.grpBoxGender.SuspendLayout();
             this.SuspendLayout();
@@ -60,7 +60,6 @@
             this.labelMuseumName.TabIndex = 0;
             this.labelMuseumName.Text = "JABBAR MUSEUM";
             this.labelMuseumName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelMuseumName.Click += new System.EventHandler(this.label1_Click);
             // 
             // groupBoxData
             // 
@@ -70,7 +69,7 @@
             this.groupBoxData.Controls.Add(this.grpBoxGender);
             this.groupBoxData.Controls.Add(this.btnClearAll);
             this.groupBoxData.Controls.Add(this.btnSave);
-            this.groupBoxData.Controls.Add(this.comboBox2);
+            this.groupBoxData.Controls.Add(this.comboBoxOccupation);
             this.groupBoxData.Controls.Add(this.txtPhone);
             this.groupBoxData.Controls.Add(this.txtAddress);
             this.groupBoxData.Controls.Add(this.txtName);
@@ -86,6 +85,50 @@
             this.groupBoxData.TabIndex = 14;
             this.groupBoxData.TabStop = false;
             this.groupBoxData.Text = "Visitor\'s data";
+            // 
+            // labelGender
+            // 
+            this.labelGender.AutoSize = true;
+            this.labelGender.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelGender.Location = new System.Drawing.Point(111, 287);
+            this.labelGender.Name = "labelGender";
+            this.labelGender.Size = new System.Drawing.Size(82, 23);
+            this.labelGender.TabIndex = 28;
+            this.labelGender.Text = "Gender:";
+            // 
+            // grpBoxGender
+            // 
+            this.grpBoxGender.Controls.Add(this.radBtnMale);
+            this.grpBoxGender.Controls.Add(this.radBtnFemale);
+            this.grpBoxGender.Location = new System.Drawing.Point(339, 266);
+            this.grpBoxGender.Name = "grpBoxGender";
+            this.grpBoxGender.Size = new System.Drawing.Size(280, 59);
+            this.grpBoxGender.TabIndex = 27;
+            this.grpBoxGender.TabStop = false;
+            // 
+            // radBtnMale
+            // 
+            this.radBtnMale.AutoSize = true;
+            this.radBtnMale.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radBtnMale.Location = new System.Drawing.Point(6, 21);
+            this.radBtnMale.Name = "radBtnMale";
+            this.radBtnMale.Size = new System.Drawing.Size(64, 26);
+            this.radBtnMale.TabIndex = 23;
+            this.radBtnMale.TabStop = true;
+            this.radBtnMale.Text = "Male";
+            this.radBtnMale.UseVisualStyleBackColor = true;
+            // 
+            // radBtnFemale
+            // 
+            this.radBtnFemale.AutoSize = true;
+            this.radBtnFemale.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radBtnFemale.Location = new System.Drawing.Point(170, 21);
+            this.radBtnFemale.Name = "radBtnFemale";
+            this.radBtnFemale.Size = new System.Drawing.Size(80, 26);
+            this.radBtnFemale.TabIndex = 24;
+            this.radBtnFemale.TabStop = true;
+            this.radBtnFemale.Text = "Female";
+            this.radBtnFemale.UseVisualStyleBackColor = true;
             // 
             // btnClearAll
             // 
@@ -104,38 +147,24 @@
             this.btnSave.TabIndex = 25;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // radioButton2
+            // comboBoxOccupation
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(170, 21);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(80, 26);
-            this.radioButton2.TabIndex = 24;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Female";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radBtnMale
-            // 
-            this.radBtnMale.AutoSize = true;
-            this.radBtnMale.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radBtnMale.Location = new System.Drawing.Point(6, 21);
-            this.radBtnMale.Name = "radBtnMale";
-            this.radBtnMale.Size = new System.Drawing.Size(64, 26);
-            this.radBtnMale.TabIndex = 23;
-            this.radBtnMale.TabStop = true;
-            this.radBtnMale.Text = "Male";
-            this.radBtnMale.UseVisualStyleBackColor = true;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(339, 216);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(280, 31);
-            this.comboBox2.TabIndex = 21;
+            this.comboBoxOccupation.FormattingEnabled = true;
+            this.comboBoxOccupation.Items.AddRange(new object[] {
+            "Doctor",
+            "Pilot",
+            "Engineer",
+            "Teacher",
+            "IT Professional ",
+            "Accountant",
+            "Athlete",
+            "Politician"});
+            this.comboBoxOccupation.Location = new System.Drawing.Point(339, 216);
+            this.comboBoxOccupation.Name = "comboBoxOccupation";
+            this.comboBoxOccupation.Size = new System.Drawing.Size(280, 31);
+            this.comboBoxOccupation.TabIndex = 21;
             // 
             // txtPhone
             // 
@@ -198,27 +227,6 @@
             this.labelName.TabIndex = 14;
             this.labelName.Text = "Name:";
             // 
-            // grpBoxGender
-            // 
-            this.grpBoxGender.Controls.Add(this.radBtnMale);
-            this.grpBoxGender.Controls.Add(this.radioButton2);
-            this.grpBoxGender.Location = new System.Drawing.Point(339, 266);
-            this.grpBoxGender.Name = "grpBoxGender";
-            this.grpBoxGender.Size = new System.Drawing.Size(280, 59);
-            this.grpBoxGender.TabIndex = 27;
-            this.grpBoxGender.TabStop = false;
-            this.grpBoxGender.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
-            // labelGender
-            // 
-            this.labelGender.AutoSize = true;
-            this.labelGender.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelGender.Location = new System.Drawing.Point(111, 287);
-            this.labelGender.Name = "labelGender";
-            this.labelGender.Size = new System.Drawing.Size(82, 23);
-            this.labelGender.TabIndex = 28;
-            this.labelGender.Text = "Gender:";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -228,7 +236,6 @@
             this.Controls.Add(this.labelMuseumName);
             this.Name = "Form1";
             this.Text = "Museum";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBoxData.ResumeLayout(false);
             this.groupBoxData.PerformLayout();
             this.grpBoxGender.ResumeLayout(false);
@@ -243,9 +250,9 @@
         private System.Windows.Forms.GroupBox groupBoxData;
         private System.Windows.Forms.Button btnClearAll;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radBtnFemale;
         private System.Windows.Forms.RadioButton radBtnMale;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBoxOccupation;
         private System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.TextBox txtName;
