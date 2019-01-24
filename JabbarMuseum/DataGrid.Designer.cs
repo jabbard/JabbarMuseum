@@ -31,12 +31,31 @@
             this.dataGridTable = new System.Windows.Forms.DataGridView();
             this.btnExport = new System.Windows.Forms.Button();
             this.btnImport = new System.Windows.Forms.Button();
+            this.ColnCardNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColnFullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColnAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColnPhNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColnOccupation = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColnGender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColnInTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColnOutTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridTable)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridTable
             // 
+            this.dataGridTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridTable.BackgroundColor = System.Drawing.SystemColors.ButtonShadow;
             this.dataGridTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColnCardNum,
+            this.ColnFullName,
+            this.ColnAddress,
+            this.ColnPhNum,
+            this.ColnOccupation,
+            this.ColnGender,
+            this.ColnInTime,
+            this.ColnOutTime});
             this.dataGridTable.Location = new System.Drawing.Point(12, 12);
             this.dataGridTable.Name = "dataGridTable";
             this.dataGridTable.RowTemplate.Height = 24;
@@ -47,24 +66,63 @@
             // 
             this.btnExport.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExport.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btnExport.Location = new System.Drawing.Point(904, 523);
+            this.btnExport.Location = new System.Drawing.Point(918, 538);
             this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(176, 49);
+            this.btnExport.Size = new System.Drawing.Size(162, 34);
             this.btnExport.TabIndex = 27;
             this.btnExport.Text = "Export";
             this.btnExport.UseVisualStyleBackColor = true;
-            this.btnExport.Click += new System.EventHandler(this.btnClearAll_Click);
             // 
             // btnImport
             // 
             this.btnImport.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnImport.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btnImport.Location = new System.Drawing.Point(687, 523);
+            this.btnImport.Location = new System.Drawing.Point(712, 538);
             this.btnImport.Name = "btnImport";
-            this.btnImport.Size = new System.Drawing.Size(176, 49);
+            this.btnImport.Size = new System.Drawing.Size(151, 34);
             this.btnImport.TabIndex = 28;
             this.btnImport.Text = "Import";
             this.btnImport.UseVisualStyleBackColor = true;
+            // 
+            // ColnCardNum
+            // 
+            this.ColnCardNum.HeaderText = "Card No.";
+            this.ColnCardNum.Name = "ColnCardNum";
+            // 
+            // ColnFullName
+            // 
+            this.ColnFullName.HeaderText = "Full Name";
+            this.ColnFullName.Name = "ColnFullName";
+            // 
+            // ColnAddress
+            // 
+            this.ColnAddress.HeaderText = "Address";
+            this.ColnAddress.Name = "ColnAddress";
+            // 
+            // ColnPhNum
+            // 
+            this.ColnPhNum.HeaderText = "Phone No.";
+            this.ColnPhNum.Name = "ColnPhNum";
+            // 
+            // ColnOccupation
+            // 
+            this.ColnOccupation.HeaderText = "Occupation";
+            this.ColnOccupation.Name = "ColnOccupation";
+            // 
+            // ColnGender
+            // 
+            this.ColnGender.HeaderText = "Gender";
+            this.ColnGender.Name = "ColnGender";
+            // 
+            // ColnInTime
+            // 
+            this.ColnInTime.HeaderText = "InTime";
+            this.ColnInTime.Name = "ColnInTime";
+            // 
+            // ColnOutTime
+            // 
+            this.ColnOutTime.HeaderText = "Out Time";
+            this.ColnOutTime.Name = "ColnOutTime";
             // 
             // DataGrid
             // 
@@ -86,5 +144,13 @@
         private System.Windows.Forms.DataGridView dataGridTable;
         private System.Windows.Forms.Button btnExport;
         private System.Windows.Forms.Button btnImport;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColnCardNum;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColnFullName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColnAddress;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColnPhNum;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColnOccupation;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColnGender;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColnInTime;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColnOutTime;
     }
 }
