@@ -17,7 +17,7 @@ namespace JabbarMuseum
         private DateTime InTime { get; set; }
         private DateTime OutTime { get; set; }
 
-        public Visitors(int CardNo, String Name, String PhNo, String Occupation, String Gender, String Address)
+        public Visitors(int CardNo, String Name, String PhNo, String Occupation, String Gender, String Address, DateTime InTime)
         {
             this.CardNo = CardNo;
             this.Name = Name;

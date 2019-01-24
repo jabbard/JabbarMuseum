@@ -15,10 +15,15 @@ namespace JabbarMuseum
         public DataGrid()
         {
             InitializeComponent();
+
         }
 
-        
-
-        
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.Show();
+            
+            
+        }
     }
 }

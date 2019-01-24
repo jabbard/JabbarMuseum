@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.dataGridTable = new System.Windows.Forms.DataGridView();
-            this.btnExport = new System.Windows.Forms.Button();
-            this.btnImport = new System.Windows.Forms.Button();
             this.ColnCardNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColnFullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColnAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -39,6 +37,9 @@
             this.ColnGender = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColnInTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColnOutTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnExport = new System.Windows.Forms.Button();
+            this.btnImport = new System.Windows.Forms.Button();
+            this.btnRegister = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridTable)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,28 +62,6 @@
             this.dataGridTable.RowTemplate.Height = 24;
             this.dataGridTable.Size = new System.Drawing.Size(1068, 505);
             this.dataGridTable.TabIndex = 0;
-            // 
-            // btnExport
-            // 
-            this.btnExport.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExport.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btnExport.Location = new System.Drawing.Point(918, 538);
-            this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(162, 34);
-            this.btnExport.TabIndex = 27;
-            this.btnExport.Text = "Export";
-            this.btnExport.UseVisualStyleBackColor = true;
-            // 
-            // btnImport
-            // 
-            this.btnImport.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnImport.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btnImport.Location = new System.Drawing.Point(712, 538);
-            this.btnImport.Name = "btnImport";
-            this.btnImport.Size = new System.Drawing.Size(151, 34);
-            this.btnImport.TabIndex = 28;
-            this.btnImport.Text = "Import";
-            this.btnImport.UseVisualStyleBackColor = true;
             // 
             // ColnCardNum
             // 
@@ -124,11 +103,46 @@
             this.ColnOutTime.HeaderText = "Out Time";
             this.ColnOutTime.Name = "ColnOutTime";
             // 
+            // btnExport
+            // 
+            this.btnExport.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExport.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnExport.Location = new System.Drawing.Point(918, 538);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(162, 34);
+            this.btnExport.TabIndex = 27;
+            this.btnExport.Text = "Export";
+            this.btnExport.UseVisualStyleBackColor = true;
+            // 
+            // btnImport
+            // 
+            this.btnImport.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImport.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnImport.Location = new System.Drawing.Point(712, 538);
+            this.btnImport.Name = "btnImport";
+            this.btnImport.Size = new System.Drawing.Size(151, 34);
+            this.btnImport.TabIndex = 28;
+            this.btnImport.Text = "Import";
+            this.btnImport.UseVisualStyleBackColor = true;
+            // 
+            // btnRegister
+            // 
+            this.btnRegister.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegister.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnRegister.Location = new System.Drawing.Point(503, 538);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(151, 34);
+            this.btnRegister.TabIndex = 29;
+            this.btnRegister.Text = "Register";
+            this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
+            // 
             // DataGrid
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1092, 588);
+            this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.btnImport);
             this.Controls.Add(this.btnExport);
             this.Controls.Add(this.dataGridTable);
@@ -152,5 +166,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColnGender;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColnInTime;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColnOutTime;
+        private System.Windows.Forms.Button btnRegister;
     }
 }

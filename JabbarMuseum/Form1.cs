@@ -13,6 +13,8 @@ namespace JabbarMuseum
 {
     public partial class Form1 : Form
     {
+
+        List<Visitors> LsVisitors = new List<Visitors>();
         
         private void ToCSV(String data)
         {
@@ -40,7 +42,29 @@ namespace JabbarMuseum
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            int cardNo = 1;
+            int cardNo = 0;
+            String path = @"Data.csv";
+            if (!File.Exists(path))
+            {
+                File.Create(path);
+            }
+            using (StreamReader reader = new StreamReader(path))
+            {
+                String line = "";
+                if (File.Exists(@"Data.csv"))
+                {
+                    while (!reader.EndOfStream)
+                    {
+                        line = reader.ReadLine();
+                        String[] rowData = line.Split(',');
+                        cardNo = int.Parse(rowData[0]);
+                    }
+                    
+                    cardNo = ++cardNo;
+                }
+                 
+            }
+            
             String name = txtName.Text;
             String phNo = txtPhone.Text;
             String address = txtAddress.Text;
@@ -53,9 +77,16 @@ namespace JabbarMuseum
             {
                 gender = radBtnFemale.Text;
             }
-            Visitors visitors = new Visitors(cardNo, name, phNo, occupation, gender, address);
-            String data = "";
+            DateTime inTime = DateTime.Now;
+            Visitors visitors = new Visitors(cardNo, name, phNo, occupation, gender, address, inTime);
+            LsVisitors.Add(visitors);
+            String data = cardNo+","+name + "," +phNo + "," +occupation + "," +gender + "," +address+","+inTime;
             ToCSV(data);
+
+
+
+
+            
         }
     }
 }
