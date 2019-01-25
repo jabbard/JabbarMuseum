@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.dataGridTable = new System.Windows.Forms.DataGridView();
+            this.btnExport = new System.Windows.Forms.Button();
+            this.btnImport = new System.Windows.Forms.Button();
+            this.btnRegister = new System.Windows.Forms.Button();
             this.ColnCardNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColnFullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColnAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColnPhNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColnOccupation = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColnGender = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColnInTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColnOutTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnExport = new System.Windows.Forms.Button();
-            this.btnImport = new System.Windows.Forms.Button();
-            this.btnRegister = new System.Windows.Forms.Button();
+            this.ColDay = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridTable)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,57 +51,17 @@
             this.dataGridTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColnCardNum,
             this.ColnFullName,
-            this.ColnAddress,
             this.ColnPhNum,
             this.ColnOccupation,
             this.ColnGender,
             this.ColnInTime,
-            this.ColnOutTime});
+            this.ColnOutTime,
+            this.ColDay});
             this.dataGridTable.Location = new System.Drawing.Point(12, 12);
             this.dataGridTable.Name = "dataGridTable";
             this.dataGridTable.RowTemplate.Height = 24;
             this.dataGridTable.Size = new System.Drawing.Size(1068, 505);
             this.dataGridTable.TabIndex = 0;
-            // 
-            // ColnCardNum
-            // 
-            this.ColnCardNum.HeaderText = "Card No.";
-            this.ColnCardNum.Name = "ColnCardNum";
-            // 
-            // ColnFullName
-            // 
-            this.ColnFullName.HeaderText = "Full Name";
-            this.ColnFullName.Name = "ColnFullName";
-            // 
-            // ColnAddress
-            // 
-            this.ColnAddress.HeaderText = "Address";
-            this.ColnAddress.Name = "ColnAddress";
-            // 
-            // ColnPhNum
-            // 
-            this.ColnPhNum.HeaderText = "Phone No.";
-            this.ColnPhNum.Name = "ColnPhNum";
-            // 
-            // ColnOccupation
-            // 
-            this.ColnOccupation.HeaderText = "Occupation";
-            this.ColnOccupation.Name = "ColnOccupation";
-            // 
-            // ColnGender
-            // 
-            this.ColnGender.HeaderText = "Gender";
-            this.ColnGender.Name = "ColnGender";
-            // 
-            // ColnInTime
-            // 
-            this.ColnInTime.HeaderText = "InTime";
-            this.ColnInTime.Name = "ColnInTime";
-            // 
-            // ColnOutTime
-            // 
-            this.ColnOutTime.HeaderText = "Out Time";
-            this.ColnOutTime.Name = "ColnOutTime";
             // 
             // btnExport
             // 
@@ -137,6 +97,46 @@
             this.btnRegister.UseVisualStyleBackColor = true;
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
+            // ColnCardNum
+            // 
+            this.ColnCardNum.HeaderText = "Card No.";
+            this.ColnCardNum.Name = "ColnCardNum";
+            // 
+            // ColnFullName
+            // 
+            this.ColnFullName.HeaderText = "Full Name";
+            this.ColnFullName.Name = "ColnFullName";
+            // 
+            // ColnPhNum
+            // 
+            this.ColnPhNum.HeaderText = "Phone No.";
+            this.ColnPhNum.Name = "ColnPhNum";
+            // 
+            // ColnOccupation
+            // 
+            this.ColnOccupation.HeaderText = "Occupation";
+            this.ColnOccupation.Name = "ColnOccupation";
+            // 
+            // ColnGender
+            // 
+            this.ColnGender.HeaderText = "Gender";
+            this.ColnGender.Name = "ColnGender";
+            // 
+            // ColnInTime
+            // 
+            this.ColnInTime.HeaderText = "InTime";
+            this.ColnInTime.Name = "ColnInTime";
+            // 
+            // ColnOutTime
+            // 
+            this.ColnOutTime.HeaderText = "Out Time";
+            this.ColnOutTime.Name = "ColnOutTime";
+            // 
+            // ColDay
+            // 
+            this.ColDay.HeaderText = "Day";
+            this.ColDay.Name = "ColDay";
+            // 
             // DataGrid
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -158,14 +158,14 @@
         private System.Windows.Forms.DataGridView dataGridTable;
         private System.Windows.Forms.Button btnExport;
         private System.Windows.Forms.Button btnImport;
+        private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColnCardNum;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColnFullName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColnAddress;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColnPhNum;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColnOccupation;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColnGender;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColnInTime;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColnOutTime;
-        private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColDay;
     }
 }

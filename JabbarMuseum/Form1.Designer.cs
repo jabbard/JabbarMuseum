@@ -38,10 +38,8 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.comboBoxOccupation = new System.Windows.Forms.ComboBox();
             this.txtPhone = new System.Windows.Forms.TextBox();
-            this.txtAddress = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.labelNumber = new System.Windows.Forms.Label();
-            this.labelAddress = new System.Windows.Forms.Label();
             this.labelOcupation = new System.Windows.Forms.Label();
             this.labelName = new System.Windows.Forms.Label();
             this.groupBoxData.SuspendLayout();
@@ -71,10 +69,8 @@
             this.groupBoxData.Controls.Add(this.btnSave);
             this.groupBoxData.Controls.Add(this.comboBoxOccupation);
             this.groupBoxData.Controls.Add(this.txtPhone);
-            this.groupBoxData.Controls.Add(this.txtAddress);
             this.groupBoxData.Controls.Add(this.txtName);
             this.groupBoxData.Controls.Add(this.labelNumber);
-            this.groupBoxData.Controls.Add(this.labelAddress);
             this.groupBoxData.Controls.Add(this.labelOcupation);
             this.groupBoxData.Controls.Add(this.labelName);
             this.groupBoxData.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -90,7 +86,7 @@
             // 
             this.labelGender.AutoSize = true;
             this.labelGender.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelGender.Location = new System.Drawing.Point(111, 287);
+            this.labelGender.Location = new System.Drawing.Point(111, 251);
             this.labelGender.Name = "labelGender";
             this.labelGender.Size = new System.Drawing.Size(82, 23);
             this.labelGender.TabIndex = 28;
@@ -100,7 +96,7 @@
             // 
             this.grpBoxGender.Controls.Add(this.radBtnMale);
             this.grpBoxGender.Controls.Add(this.radBtnFemale);
-            this.grpBoxGender.Location = new System.Drawing.Point(339, 266);
+            this.grpBoxGender.Location = new System.Drawing.Point(339, 227);
             this.grpBoxGender.Name = "grpBoxGender";
             this.grpBoxGender.Size = new System.Drawing.Size(280, 59);
             this.grpBoxGender.TabIndex = 27;
@@ -161,24 +157,17 @@
             "Accountant",
             "Athlete",
             "Politician"});
-            this.comboBoxOccupation.Location = new System.Drawing.Point(339, 216);
+            this.comboBoxOccupation.Location = new System.Drawing.Point(339, 178);
             this.comboBoxOccupation.Name = "comboBoxOccupation";
             this.comboBoxOccupation.Size = new System.Drawing.Size(280, 31);
             this.comboBoxOccupation.TabIndex = 21;
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(339, 107);
+            this.txtPhone.Location = new System.Drawing.Point(339, 113);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(280, 32);
             this.txtPhone.TabIndex = 20;
-            // 
-            // txtAddress
-            // 
-            this.txtAddress.Location = new System.Drawing.Point(339, 162);
-            this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(280, 32);
-            this.txtAddress.TabIndex = 19;
             // 
             // txtName
             // 
@@ -191,27 +180,17 @@
             // 
             this.labelNumber.AutoSize = true;
             this.labelNumber.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNumber.Location = new System.Drawing.Point(111, 107);
+            this.labelNumber.Location = new System.Drawing.Point(111, 116);
             this.labelNumber.Name = "labelNumber";
             this.labelNumber.Size = new System.Drawing.Size(107, 23);
             this.labelNumber.TabIndex = 17;
             this.labelNumber.Text = "Phone No.:";
             // 
-            // labelAddress
-            // 
-            this.labelAddress.AutoSize = true;
-            this.labelAddress.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAddress.Location = new System.Drawing.Point(111, 162);
-            this.labelAddress.Name = "labelAddress";
-            this.labelAddress.Size = new System.Drawing.Size(89, 23);
-            this.labelAddress.TabIndex = 16;
-            this.labelAddress.Text = "Address:";
-            // 
             // labelOcupation
             // 
             this.labelOcupation.AutoSize = true;
             this.labelOcupation.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelOcupation.Location = new System.Drawing.Point(111, 216);
+            this.labelOcupation.Location = new System.Drawing.Point(111, 181);
             this.labelOcupation.Name = "labelOcupation";
             this.labelOcupation.Size = new System.Drawing.Size(115, 23);
             this.labelOcupation.TabIndex = 15;
@@ -254,10 +233,8 @@
         private System.Windows.Forms.RadioButton radBtnMale;
         private System.Windows.Forms.ComboBox comboBoxOccupation;
         private System.Windows.Forms.TextBox txtPhone;
-        private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label labelNumber;
-        private System.Windows.Forms.Label labelAddress;
         private System.Windows.Forms.Label labelOcupation;
         private System.Windows.Forms.Label labelName;
         private System.Windows.Forms.GroupBox grpBoxGender;
