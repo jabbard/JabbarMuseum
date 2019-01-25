@@ -14,9 +14,9 @@ namespace JabbarMuseum
     public partial class Form1 : Form
     {
 
-        List<Visitors> LsVisitors = new List<Visitors>();
+        public List<Visitors> LsVisitors = new List<Visitors>();
         
-        private void ToCSV(String data)
+        public void ToCSV(String data)
         {
             String path = @"Data.csv";
             if (!File.Exists(path))
@@ -40,7 +40,7 @@ namespace JabbarMuseum
 
         
 
-        private void btnSave_Click(object sender, EventArgs e)
+        public void btnSave_Click(object sender, EventArgs e)
         {
             int cardNo = 0;
             String path = @"Data.csv";

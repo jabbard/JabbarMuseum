@@ -12,18 +12,29 @@ namespace JabbarMuseum
 {
     public partial class DataGrid : Form
     {
+        List<Visitors> visitors;
+        Form1 form1 = new Form1();
         public DataGrid()
         {
             InitializeComponent();
-
+            Populate();
+            
         }
+
+        public void Populate()
+        {
+            visitors = form1.LsVisitors;
+            foreach (Visitors v in visitors)
+            {
+                dataGridTable.Rows.Add(v.CardNo, v.Name, v.Address, v.PhNo, v.Occupation, v.Gender, v.InTime);
+            }
+        }
+
+        
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
-            form1.Show();
-            
-            
+            form1.Show();         
         }
     }
 }
