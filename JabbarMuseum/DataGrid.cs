@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,11 +24,24 @@ namespace JabbarMuseum
 
         public void Populate()
         {
-            visitors = form1.LsVisitors;
-            foreach (Visitors v in visitors)
+            String path = @"Data.csv";
+            using (StreamReader reader = new StreamReader(path))
             {
-                dataGridTable.Rows.Add(v.CardNo, v.Name, v.Address, v.PhNo, v.Occupation, v.Gender, v.InTime);
+                String line = "";
+                if (File.Exists(path))
+                {
+                    while (!reader.EndOfStream)
+                    {
+                        line = reader.ReadLine();
+                        String[] rowData = line.Split(',');
+                        dataGridTable.Rows.Add(rowData[0], rowData[1], rowData[2], rowData[3], rowData[4], rowData[5], rowData[6]);
+                    }
+
+                    
+                }
+
             }
+            
         }
 
         
