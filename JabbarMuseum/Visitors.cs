@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace JabbarMuseum
 {
-    class Visitors
+    public class Visitors
     {
-        private int CardNo { get; set; }
-        private String Name { get; set; }
-        private String PhNo { get; set; }
-        private String Occupation { get; set; }
-        private String Gender { get; set; }
-        private String Address { get; set; }
-        private DateTime InTime { get; set; }
-        private DateTime OutTime { get; set; }
+        public int CardNo { get; set; }
+        public String Name { get; set; }
+        public String PhNo { get; set; }
+        public String Occupation { get; set; }
+        public String Gender { get; set; }
+        public String Address { get; set; }
+        public DateTime InTime { get; set; }
+        public DateTime OutTime { get; set; }
 
-        public Visitors(int CardNo, String Name, String PhNo, String Occupation, String Gender, String Address)
+        public Visitors(int CardNo, String Name, String PhNo, String Occupation, String Gender, String Address, DateTime InTime)
         {
             this.CardNo = CardNo;
             this.Name = Name;
